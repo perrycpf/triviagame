@@ -1,0 +1,219 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    text-align: center;
+    font-size: 19px;
+    background-image: url('../images/background.jpg');
+    text-emphasis: bolder;
+    color:#575555;
+    line-height: 1.5;
+}
+.img-pic {
+    max-height: 270px;
+    max-width: 400px;
+    border-color: #cccccc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+#logoId {
+    height: 120px;
+    width: 500px;
+    border-color: #cccccc;
+    margin: 20px 0px 20px 0px;
+}
+.container {
+    background-color: rgb(247, 247, 117);
+    margin: 30px auto;
+    clear: both;
+    padding-bottom: 35px;
+}
+#startBtn {
+    border-radius: 5px;
+    background: rgb(255, 192, 203);
+    color:black;
+    border: solid 1px #b7b6f1;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+#startBtn:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: white;
+}
+h1, h2 {
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: #575555;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 28px;
+} 
+.row {
+    margin: 0;
+}
+#timeLeft, #questionLeft, #question, .selectedAnswer, #gameMessage, 
+#correctAnswer, #imageId, #endGameMessage, #numCorrectAnswers,
+#numIncorrectAnswers, #numUnanswers {
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#answerList {
+    margin-top: 25px;
+}
+.selectedAnswer {
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    width: 10px;
+    display: block;
+    border-radius: 50px;
+}
+.selectedAnswer:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+#restartBtn {
+    justify-content: center;
+    color:black;
+    border-radius: 50px;
+}
+#restartBtn:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: solid 1px;
+    border-color: white;
+}
+@keyframes bounceOut {
+    20% {
+        transform: scale3d(0.8, 0.8, 0.8);
+    }
+
+    50%,
+    55% {
+        opacity: 1;
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+.bounceOut {
+    animation-duration: 0.9s;
+    animation-name: bounceOut;
+}
+@keyframes slideInDown {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+}
+.slideInDown {
+    animation-name: slideInDown;
+}
+.animated {
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+}
+/* Media Queries  */
+/* xs < 375 */ 
+@media screen and (max-width: 399px) { 
+    body,.lead,h1,h2,h3 { font-size: 1em; }
+    #startBtn {
+        font-size: 20px;
+        padding: 22px 20px;
+        width: 200px;
+        margin: 40px 0px 80px 0px;
+    }
+    .container {
+        max-width: 315px;}
+    .img-pic {
+        max-height: 160px;
+        max-width: 220px;
+    }    
+}  
+/* sm */ 
+@media screen and (min-width: 400px) { 
+    body,.lead,h1,h2,h3 { font-size: 1em; } 
+    #startBtn {
+        font-size: 25px;
+        padding: 22px 20px;
+        width: 230px;
+        margin: 40px 0px 80px 0px;
+    }
+    .container {
+        max-width: 350px;}
+    .img-pic {
+        max-height: 180px;
+        max-width: 250px;
+    } 
+} 
+/* md */ 
+@media screen and (min-width: 768px) { 
+    body,.lead,h1,h2,h3 { font-size: 1.1em; } 
+    #startBtn {
+        font-size: 38px;
+        padding: 22px 20px;
+        width: 350px;
+        margin: 80px 0px 120px 0px;
+    }
+    .container {
+        max-width: 620px;}
+    .img-pic {
+        max-height: 180px;
+        max-width: 250px;
+    }     
+} 
+/* lg */ 
+@media screen and (min-width: 992px) { 
+    body,.lead,h1,h2,h3 { font-size: 1.2em; } 
+    #startBtn {
+        font-size: 38px;
+        padding: 22px 20px;
+        width: 350px;
+        margin: 80px 0px 120px 0px;
+    }
+    .container {
+        max-width: 800px;}
+    .img-pic {
+        max-height: 220px;
+        max-width: 270px;
+    }         
+}   
+/* x-lg */ 
+@media screen and (min-width: 1200px) { 
+    body,.lead,h1,h2,h3 { font-size: 1.3em; } 
+    #startBtn {
+        font-size: 38px;
+        padding: 22px 20px;
+        width: 350px;
+        margin: 80px 0px 120px 0px;
+    }
+    .container {
+        max-width: 900px;}
+    .img-pic {
+        max-height: 220px;
+        max-width: 270px;
+    }      
+}
+  
